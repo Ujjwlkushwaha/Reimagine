@@ -41,15 +41,16 @@ var tl = gsap.timeline({
         start : '50% center',
         end : 'bottom center',
         scrub : 1,
-        markers: true
+        markers:true
     }
 })
 
 tl.to('.centerLogo , .centerLogo img' , {
-    y : -300, 
+    y : -100, 
+    width:'70vw',
     duration : 1,
     ease : 'back.out',
-    opacity:0
+    // opacity:0
 
 })
 
@@ -61,9 +62,11 @@ tl.to('.text h1' , {
 } , '-=1')
 
 tl.to('#bottle' , {
-    left : '10%',
-    y : '50%',
+    top : '-20%',
+    width:'20vw',
+    y : '60%',
     duration : 1,
+    opacity : 0,
     ease: 'power2.out'
 } , '-=1')
 

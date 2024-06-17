@@ -49,6 +49,8 @@ nav{
     justify-content: space-between;
     padding: 25px 10vw;
     position: fixed;
+    z-index: 1000;
+    background-color:black;
 }
 .logo img{
     width: 150px;
@@ -94,6 +96,8 @@ nav button{
     height: 50%;
     position: absolute;
     bottom: -12%;
+    left: 50%;
+    transform: translate(-50% , 0);
 }
 
 .centerLogo img{
@@ -111,5 +115,13 @@ nav button{
 .page2{
     width: 100%;
     height: 100vh;
-    background-color: white;
+    overflow: hidden;
+}
+.page2 .left{
+    width: 50%;
+    height: 100%;
+
+}
+.page2 .left img{
+    width: 40%;
 }
